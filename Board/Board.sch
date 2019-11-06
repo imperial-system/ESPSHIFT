@@ -33,27 +33,27 @@ Wire Wire Line
 $Comp
 L Transistor_Array:ULN2803A U3
 U 1 1 5DBA2C8A
-P 3000 2650
-F 0 "U3" H 3000 3217 50  0000 C CNN
-F 1 "ULN2803A" H 3000 3126 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm_LongPads" H 3050 2000 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 3100 2450 50  0001 C CNN
-	1    3000 2650
-	1    0    0    -1  
+P 3000 2950
+F 0 "U3" H 3000 3517 50  0000 C CNN
+F 1 "ULN2803A" H 3000 3426 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm_LongPads" H 3050 2300 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 3100 2750 50  0001 C CNN
+	1    3000 2950
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR05
 U 1 1 5DBA3F75
-P 3000 3500
-F 0 "#PWR05" H 3000 3250 50  0001 C CNN
-F 1 "GND" H 3005 3327 50  0000 C CNN
-F 2 "" H 3000 3500 50  0001 C CNN
-F 3 "" H 3000 3500 50  0001 C CNN
-	1    3000 3500
-	1    0    0    -1  
+P 3150 2250
+F 0 "#PWR05" H 3150 2000 50  0001 C CNN
+F 1 "GND" H 3155 2077 50  0000 C CNN
+F 2 "" H 3150 2250 50  0001 C CNN
+F 3 "" H 3150 2250 50  0001 C CNN
+	1    3150 2250
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 3500 3000 3350
+	3000 2100 3000 2250
 $Comp
 L ESP8266:ESP-01v090 U2
 U 1 1 5DBA453A
@@ -179,57 +179,51 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 1800 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2200 3350
-Wire Wire Line
-	3400 2350 3550 2350
-Text Label 3900 3150 0    50   ~ 0
-RL8
-Text Label 3900 3050 0    50   ~ 0
-RL7
-Text Label 3900 2950 0    50   ~ 0
-RL6
-Text Label 3900 2850 0    50   ~ 0
-RL5
-Text Label 3900 2750 0    50   ~ 0
-RL4
-Text Label 3900 2650 0    50   ~ 0
-RL3
-Text Label 3900 2550 0    50   ~ 0
-RL2
 Text Label 3900 2450 0    50   ~ 0
+RL8
+Text Label 3900 2550 0    50   ~ 0
+RL7
+Text Label 3900 2650 0    50   ~ 0
+RL6
+Text Label 3900 2750 0    50   ~ 0
+RL5
+Text Label 3900 2850 0    50   ~ 0
+RL4
+Text Label 3900 2950 0    50   ~ 0
+RL3
+Text Label 3900 3050 0    50   ~ 0
+RL2
+Text Label 3900 3150 0    50   ~ 0
 RL1
 Wire Wire Line
-	3900 3150 3400 3150
+	3900 2450 3400 2450
 Wire Wire Line
-	3400 3050 3900 3050
+	3400 2550 3900 2550
 Wire Wire Line
-	3900 2950 3400 2950
+	3900 2650 3400 2650
 Wire Wire Line
-	3400 2850 3900 2850
+	3400 2750 3900 2750
 Wire Wire Line
-	3900 2750 3400 2750
+	3900 2850 3400 2850
 Wire Wire Line
-	3400 2650 3900 2650
+	3400 2950 3900 2950
 Wire Wire Line
-	3900 2550 3400 2550
+	3900 3050 3400 3050
 Wire Wire Line
-	3400 2450 3900 2450
+	3400 3150 3900 3150
 $Comp
 L power:+5V #PWR06
 U 1 1 5DBB5436
-P 3550 2150
-F 0 "#PWR06" H 3550 2000 50  0001 C CNN
-F 1 "+5V" H 3565 2323 50  0000 C CNN
-F 2 "" H 3550 2150 50  0001 C CNN
-F 3 "" H 3550 2150 50  0001 C CNN
-	1    3550 2150
-	1    0    0    -1  
+P 4250 3050
+F 0 "#PWR06" H 4250 2900 50  0001 C CNN
+F 1 "+5V" H 4265 3223 50  0000 C CNN
+F 2 "" H 4250 3050 50  0001 C CNN
+F 3 "" H 4250 3050 50  0001 C CNN
+	1    4250 3050
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 2150 3550 2350
-Wire Wire Line
 	8050 1750 7950 1750
-Wire Wire Line
-	7950 1750 7950 2000
 $Comp
 L power:+5V #PWR011
 U 1 1 5DBBD6F0
@@ -254,15 +248,7 @@ Wire Wire Line
 Wire Wire Line
 	8750 1650 8750 1750
 Wire Wire Line
-	7950 2000 8750 2000
-Wire Wire Line
-	8750 1950 9000 1950
-Wire Wire Line
-	8750 2000 8750 1950
-Wire Wire Line
 	8650 1650 8750 1650
-Wire Wire Line
-	8650 1850 9000 1850
 $Comp
 L Connector:Screw_Terminal_01x03 J4
 U 1 1 5DBB76A8
@@ -287,8 +273,6 @@ F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 8350 1550 50  0001
 $EndComp
 Wire Wire Line
 	9800 1750 9700 1750
-Wire Wire Line
-	9700 1750 9700 2000
 $Comp
 L power:+5V #PWR015
 U 1 1 5DBC7A34
@@ -313,15 +297,7 @@ Wire Wire Line
 Wire Wire Line
 	10500 1650 10500 1750
 Wire Wire Line
-	9700 2000 10500 2000
-Wire Wire Line
-	10500 1950 10750 1950
-Wire Wire Line
-	10500 2000 10500 1950
-Wire Wire Line
 	10400 1650 10500 1650
-Wire Wire Line
-	10400 1850 10750 1850
 $Comp
 L Connector:Screw_Terminal_01x03 J8
 U 1 1 5DBC7A45
@@ -346,8 +322,6 @@ F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 10100 1550 50  000
 $EndComp
 Wire Wire Line
 	7950 3050 7850 3050
-Wire Wire Line
-	7850 3050 7850 3300
 $Comp
 L power:+5V #PWR010
 U 1 1 5DBCCC1B
@@ -372,15 +346,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 2950 8650 3050
 Wire Wire Line
-	7850 3300 8650 3300
-Wire Wire Line
-	8650 3250 8900 3250
-Wire Wire Line
-	8650 3300 8650 3250
-Wire Wire Line
 	8550 2950 8650 2950
-Wire Wire Line
-	8550 3150 8900 3150
 $Comp
 L Connector:Screw_Terminal_01x03 J3
 U 1 1 5DBCCC2C
@@ -390,7 +356,7 @@ F 1 "Screw_Terminal_01x03" H 9018 2916 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 9100 3150 50  0001 C CNN
 F 3 "~" H 9100 3150 50  0001 C CNN
 	1    9100 3150
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Relay:SANYOU_SRD_Form_C K3
@@ -405,8 +371,6 @@ F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 8250 2850 50  0001
 $EndComp
 Wire Wire Line
 	9700 3050 9600 3050
-Wire Wire Line
-	9600 3050 9600 3300
 $Comp
 L power:+5V #PWR014
 U 1 1 5DBCCC3A
@@ -431,15 +395,9 @@ Wire Wire Line
 Wire Wire Line
 	10400 2950 10400 3050
 Wire Wire Line
-	9600 3300 10400 3300
-Wire Wire Line
-	10400 3250 10650 3250
-Wire Wire Line
-	10400 3300 10400 3250
-Wire Wire Line
 	10300 2950 10400 2950
 Wire Wire Line
-	10300 3150 10650 3150
+	10300 3150 10350 3150
 $Comp
 L Connector:Screw_Terminal_01x03 J7
 U 1 1 5DBCCC4B
@@ -464,8 +422,6 @@ F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 10000 2850 50  000
 $EndComp
 Wire Wire Line
 	7900 4250 7800 4250
-Wire Wire Line
-	7800 4250 7800 4500
 $Comp
 L power:+5V #PWR09
 U 1 1 5DBE1BC7
@@ -490,15 +446,9 @@ Wire Wire Line
 Wire Wire Line
 	8600 4150 8600 4250
 Wire Wire Line
-	7800 4500 8600 4500
-Wire Wire Line
 	8600 4450 8850 4450
 Wire Wire Line
-	8600 4500 8600 4450
-Wire Wire Line
 	8500 4150 8600 4150
-Wire Wire Line
-	8500 4350 8850 4350
 $Comp
 L Connector:Screw_Terminal_01x03 J2
 U 1 1 5DBE1BD8
@@ -523,8 +473,6 @@ F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 8200 4050 50  0001
 $EndComp
 Wire Wire Line
 	9650 4250 9550 4250
-Wire Wire Line
-	9550 4250 9550 4500
 $Comp
 L power:+5V #PWR013
 U 1 1 5DBE1BE6
@@ -549,15 +497,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 4150 10350 4250
 Wire Wire Line
-	9550 4500 10350 4500
-Wire Wire Line
-	10350 4450 10600 4450
-Wire Wire Line
-	10350 4500 10350 4450
-Wire Wire Line
 	10250 4150 10350 4150
-Wire Wire Line
-	10250 4350 10600 4350
 $Comp
 L Connector:Screw_Terminal_01x03 J6
 U 1 1 5DBE1BF7
@@ -582,8 +522,6 @@ F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 9950 4050 50  0001
 $EndComp
 Wire Wire Line
 	7800 5550 7700 5550
-Wire Wire Line
-	7700 5550 7700 5800
 $Comp
 L power:+5V #PWR08
 U 1 1 5DBE1C05
@@ -606,15 +544,9 @@ Wire Wire Line
 Wire Wire Line
 	8500 5450 8500 5550
 Wire Wire Line
-	7700 5800 8500 5800
-Wire Wire Line
-	8500 5750 8750 5750
-Wire Wire Line
-	8500 5800 8500 5750
-Wire Wire Line
 	8400 5450 8500 5450
 Wire Wire Line
-	8400 5650 8750 5650
+	8400 5650 8450 5650
 $Comp
 L Connector:Screw_Terminal_01x03 J1
 U 1 1 5DBE1C15
@@ -639,8 +571,6 @@ F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 8100 5350 50  0001
 $EndComp
 Wire Wire Line
 	9550 5550 9450 5550
-Wire Wire Line
-	9450 5550 9450 5800
 $Comp
 L power:+5V #PWR012
 U 1 1 5DBE1C23
@@ -665,15 +595,9 @@ Wire Wire Line
 Wire Wire Line
 	10250 5450 10250 5550
 Wire Wire Line
-	9450 5800 10250 5800
-Wire Wire Line
-	10250 5750 10500 5750
-Wire Wire Line
-	10250 5800 10250 5750
-Wire Wire Line
 	10150 5450 10250 5450
 Wire Wire Line
-	10150 5650 10500 5650
+	10150 5650 10200 5650
 $Comp
 L Connector:Screw_Terminal_01x03 J5
 U 1 1 5DBE1C34
@@ -729,8 +653,8 @@ L Connector:Screw_Terminal_01x02 J9
 U 1 1 5DBF6141
 P 1400 5350
 F 0 "J9" H 1318 5025 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1318 5116 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_Wuerth_691311400102_P7.62mm" H 1400 5350 50  0001 C CNN
+F 1 "220v" H 1318 5116 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 1400 5350 50  0001 C CNN
 F 3 "~" H 1400 5350 50  0001 C CNN
 	1    1400 5350
 	-1   0    0    1   
@@ -885,4 +809,84 @@ $EndComp
 Wire Wire Line
 	2950 5900 2950 5700
 Connection ~ 2950 5700
+Wire Wire Line
+	3000 2100 3150 2100
+Wire Wire Line
+	3150 2100 3150 2250
+Wire Wire Line
+	4250 3250 4250 3050
+Wire Wire Line
+	3400 3250 4250 3250
+Wire Wire Line
+	8550 3150 8600 3150
+Wire Wire Line
+	8600 3150 8600 3250
+Wire Wire Line
+	8600 3250 8900 3250
+Text Label 7850 3050 2    50   ~ 0
+COM_RL3
+Text Label 8900 3150 2    50   ~ 0
+COM_RL3
+Text Label 7950 1750 2    50   ~ 0
+COM_RL1
+Wire Wire Line
+	8650 1850 8700 1850
+Wire Wire Line
+	8700 1850 8700 1950
+Wire Wire Line
+	8700 1950 9000 1950
+Text Label 9000 1850 2    50   ~ 0
+COM_RL1
+Text Label 9700 1750 2    50   ~ 0
+COM_RL2
+Wire Wire Line
+	10400 1850 10450 1850
+Wire Wire Line
+	10450 1850 10450 1950
+Wire Wire Line
+	10450 1950 10750 1950
+Text Label 10750 1850 2    50   ~ 0
+COM_RL2
+Text Label 9600 3050 2    50   ~ 0
+COM_RL4
+Text Label 10650 3150 2    50   ~ 0
+COM_RL4
+Wire Wire Line
+	10350 3150 10350 3250
+Wire Wire Line
+	10350 3250 10650 3250
+Text Label 7800 4250 2    50   ~ 0
+COM_RL5
+Wire Wire Line
+	8600 4350 8600 4450
+Wire Wire Line
+	8500 4350 8600 4350
+Text Label 8850 4350 2    50   ~ 0
+COM_RL5
+Text Label 9550 4250 2    50   ~ 0
+COM_RL6
+Wire Wire Line
+	10250 4350 10300 4350
+Wire Wire Line
+	10300 4450 10300 4350
+Wire Wire Line
+	10300 4450 10600 4450
+Text Label 10600 4350 2    50   ~ 0
+COM_RL6
+Text Label 9450 5550 2    50   ~ 0
+COM_RL8
+Text Label 10500 5650 2    50   ~ 0
+COM_RL8
+Wire Wire Line
+	10200 5650 10200 5750
+Wire Wire Line
+	10200 5750 10500 5750
+Text Label 7700 5550 2    50   ~ 0
+COM_RL7
+Text Label 8750 5650 2    50   ~ 0
+COM_RL7
+Wire Wire Line
+	8450 5650 8450 5750
+Wire Wire Line
+	8450 5750 8750 5750
 $EndSCHEMATC

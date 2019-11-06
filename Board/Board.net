@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\lamas\Documents\GitHub\ESP8266-8-RELAY\Board\Board.sch)
-    (date "11/4/2019 5:12:27 PM")
+    (date "11/6/2019 2:01:23 PM")
     (tool "Eeschema (5.1.4)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -157,7 +157,7 @@
       (tstamp 5DBF5979))
     (comp (ref J9)
       (value 220v)
-      (footprint TerminalBlock:TerminalBlock_Wuerth_691311400102_P7.62mm)
+      (footprint TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm)
       (datasheet ~)
       (libsource (lib Connector) (part Screw_Terminal_01x02) (description "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
